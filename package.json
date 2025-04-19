@@ -89,7 +89,10 @@
     "drizzle-kit": "latest",
     "drizzle-orm": "latest",
     "uuid": "latest",
-    "next-swagger-doc": "latest"
+    "next-swagger-doc": "latest",
+    "child_process": "latest",
+    "fs": "latest",
+    "path": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",
