@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "next build",
   "devCommand": "next dev",
-  "installCommand": "npm install --omit=dev --no-optional --no-package-lock --no-audit",
+  "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next"
 }
