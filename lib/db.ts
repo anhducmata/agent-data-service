@@ -6,6 +6,7 @@ import { pgTable, text, timestamp, jsonb, uuid, pgEnum } from "drizzle-orm/pg-co
 neonConfig.fetchConnectionCache = true
 
 // Initialize the SQL client with the database URL
+// Use the HTTP connection for serverless environments
 export const sql = neon(process.env.DATABASE_URL!)
 
 // Initialize Drizzle ORM
@@ -24,8 +25,6 @@ export async function executeQuery(query: string, params: any[] = []) {
     throw error
   }
 }
-
-// Export the raw SQL client for direct use when needed
 
 // Define role enum for messages
 export const roleEnum = pgEnum("role", ["user", "agent"])
