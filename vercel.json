@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "next build",
   "devCommand": "next dev",
-  "installCommand": "npm install --legacy-peer-deps --omit=optional --no-package-lock",
+  "installCommand": "npm install --omit=dev --no-optional --no-package-lock --no-audit",
   "framework": "nextjs",
   "outputDirectory": ".next"
 }
